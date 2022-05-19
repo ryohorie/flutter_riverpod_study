@@ -1,10 +1,11 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_riverpod/flutter_riverpod.dart';
 import 'package:flutter_riverpod_study/pages/counter/counter_page.dart';
+import 'package:flutter_riverpod_study/pages/holidays/holidays_page.dart';
 
 class HomePage extends ConsumerWidget {
   HomePage({Key? key}) : super(key: key);
-  final _pages = [const CounterPage(), Container()];
+  final _pages = [const CounterPage(), const HoidaysPage()];
   final _homePageTypeProvider = StateProvider<int>((ref) => 0);
   final _bottomNavigationBarItems = <BottomNavigationBarItem>[
     const BottomNavigationBarItem(
